@@ -2,13 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Nav from './Nav';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
       
+      <BrowserRouter>
+
         <Nav  />
 
         <Routes>
@@ -20,6 +22,9 @@ function App() {
         </Routes>
 
       </BrowserRouter>
+
+
+      <Footer />
     </div>
   );
 }
